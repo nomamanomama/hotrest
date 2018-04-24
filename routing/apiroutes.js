@@ -6,11 +6,15 @@ var path = require('path');
 module.exports = function (app) {
 
     app.get('/app/tables', function (req, res) {
-        console.log(tables);
+        console.log(req.body);
+        tables.push(req.body);
+        res.end();
     })
 
     app.get('/app/wait', function (req, res) {
-        console.log(wait);
+        console.log(req.body);
+        wait.push(req.body);
+        res.end();
     })
 
     app.post('/app/wait', function (req, res) {
