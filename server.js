@@ -1,5 +1,5 @@
 // Dependencies
-// 
+//
 
 var express = require("express");
 var bodyParser = require("body-parser");
@@ -17,11 +17,11 @@ app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
 app.use(bodyParser.json())
 
-require('./app/routing/apiRoutes.js')(app);
-require('./app/routing/htmlRoutes.js')(app);
+require('./routing/apiroutes.js')(app);
+require('./routing/htmlroutes.js')(app);
 
 
 // Listening on PORT
 app.listen(PORT, function(){
-    console.log("App listening on port: " + PORT);
+   console.log("App listening on port: " + PORT);
 })
