@@ -1,5 +1,5 @@
 // <!-- BELOW CODE IS CRITICAL. IT HANDLES HOW FORM DATA IS LOADED FROM OUR SERVER -->
-
+alert ("connected");
 
 	// In this code, jQuery is used to "download" the data from our server
 	// We then dynamically display this content in our table. This is very similar to the group projects you just completed.
