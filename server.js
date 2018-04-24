@@ -18,6 +18,8 @@ app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
 app.use(bodyParser.json())
 
+app.use(express.static('./public'));
+
 require('./routing/apiroutes.js')(app);
 require('./routing/htmlroutes.js')(app);
 
